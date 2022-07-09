@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+}
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.header{
+    text-align: center;
+    color: white;
+}
+.header p{
+    font-style: italic;
+}
+#survey-form{
+    background: #232344;
+    color: white;
+    width: 50%;
+    margin-inline: auto;
+    padding: 3em;
+    border-radius: .5em;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+.form-group{
+    margin-bottom: 1em;
+}
+.form-group>*{
+display: block;
+}
+.form-group>input{
+    width: 100%;
+    padding: 1em .5em;
+}
+.form-group>input::placeholder{
+   font-size: 1rem;
+}
+select{
+    padding: 1em .5em;
+    width: 100%;
+}
+option:is(selected){
+    font-size: 1em;
+}
+#comments{
+    width: 100%;
+    padding: 1em 0 4em 1em;
+}
+#comments::placeholder{
+    font-size: 1.125rem;
+}
+#submit{
+    width: 100%;
+    background: #37AF65;
+    color: white;
+    padding: 1em 0;
+    font-size: 1rem;
+}
